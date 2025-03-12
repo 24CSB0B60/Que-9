@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Product Buying Website</h1>
+    </div>
+
+    <button id="theme-toggle-btn">Toggle Dark Mode</button>
+
+    <button id="change-style-btn">Change Header Style</button>
+
+    <div class="timer">
+        <input type="number" id="timer-input" placeholder="Enter seconds" />
+        <button id="start-timer-btn">Start Timer</button>
+        <button id="pause-timer-btn">Pause Timer</button>
+        <button id="reset-timer-btn">Reset Timer</button>
+        <div id="timer-display">00:00</div>
+    </div>
+
+    <div class="image">
+        <div class="product">
+            <img src="R.jpg" alt="Product 1" class="images">
+            <div class="product-info">
+                <div class="product-name">Heater</div>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="t-shirt.jpg" alt="T-Shirt" class="images">
+            <div class="product-info">
+                <div class="product-name">T-Shirt</div>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="green.jpg" alt="Green Shirt" class="images">
+            <div class="product-info">
+                <div class="product-name">Green Shirt</div>
+                <div class="product-price">$24.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="shirt.jpg" alt="Shirt" class="images">
+            <div class="product-info">
+                <div class="product-name">Shirt</div>
+                <div class="product-price">$35.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="gym.jpg" alt="Gym Shorts" class="images">
+            <div class="product-info">
+                <div class="product-name">Gym Shorts</div>
+                <div class="product-price">$14.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="gym1.jpg" alt="Gym T-Shirt" class="images">
+            <div class="product-info">
+                <div class="product-name">Gym T-Shirt</div>
+                <div class="product-price">$88.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="bracelets.jpg" alt="Bracelets" class="images">
+            <div class="product-info">
+                <div class="product-name">Bracelets</div>
+                <div class="product-price">$12.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Product Buying Website</h1>
+        <a href="cart.html" class="go-to-cart-btn">Go to Cart</a>
+    </div>
+
+    <div class="table-container">
+        <h3>Add Product to Table</h3>
+        <input type="text" id="product-name-input" placeholder="Product Name" />
+        <input type="number" id="product-price-input" placeholder="Price" />
+        <button id="add-row-btn">Add Product</button>
+        
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>    
+
+<div class="product">
+    <img src="R.jpg" alt="Product 1" class="images" onclick="openImageModal(this)">
+    <div class="product-info">
+        <div class="product-name">Heater</div>
+        <div class="product-price">$29.99</div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
